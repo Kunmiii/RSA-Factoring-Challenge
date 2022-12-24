@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """
 Factorize as many numbers as possible into a product of two smaller numbers.
     Usage: factors <file>
@@ -21,11 +20,14 @@ Factorize as many numbers as possible into a product of two smaller numbers.
             if it hasn’t finish
     Push all your scripts, source code, etc… to your repositor
 """
-
+# library to get arguments
 import sys
 
-def fc():
-
+# function to unpack number factorial
+def factors():
+    """
+    function factors to search file to convert number and format n=p*q
+    """
     try:
         revfile = sys.argv[1]
         with open(revfile) as f:
@@ -45,4 +47,6 @@ def fc():
     except (IndexError):
         pass
 
-fc()
+
+# autostart
+factors()
